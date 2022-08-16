@@ -11,7 +11,7 @@ args = {
 dag = DAG(
     dag_id='cannabis-dags',
     default_args=args,
-    schedule_interval='*/10 * * * *'
+    schedule_interval='* */12 * * *'
 )
 
 with dag:
