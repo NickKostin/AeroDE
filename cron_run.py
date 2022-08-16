@@ -8,5 +8,5 @@ command = params['cron_command']
 
 cron = CronTab(user=f'{user}')
 job = cron.new(command=f'{command}')
-job.minute.every(1)
+job.hour.every(12)
 cron.write()
